@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+.boxModel {
+    background-color: red;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 10px;
+    float: right;
+    display: block;
+}
+
+.font-background {
+    font-weight: bold;
+    color: green;
+    font-size: 30px;
+    background-color: black;
+}
+
+.backgroundImg {
+    width: 500px;
+    height: 500px;
+    background-image: url("http://i67.tinypic.com/1zc1pnc.jpg");
+}
+
+.relative {
+    position: relative;
+    left: 20px;
+    top: 20px;
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+}
+
+.absolute {
+    position: absolute;
+    top: 100px;
+    left: 900px;
+    width: 300px;
+    height: 300px;
+    background-color: rebeccapurple;
+}
+
+.fixed {
+    position: fixed;
+    left: 100px;
+    top: 0px;
+    width: 100%;
+    height: 10px;
+    background-color: orange;
+}
+
+.selectors,
+#selectors {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+}
+
+.selectors > p {
+    font-size: 30px;
+    padding: 10px;
+}
+
+#selectors p {
+    font-size: 10px;
+    margin-left: 20px;
+}
+
+.plus + p {
+    font-size: 40px;
+}
+
+.bounce {
+    width: 100px;
+    height: 100px;
+    background-color: darkmagenta;
+    border-radius: 50%;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    50% {
+        transform: translateY(20px);
+    } 100% {
+        transform: translateY(0px);
+    }
+}
+
+.transition {
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    transition: background-color 2s ease-in-out;
+}
+
+.transition:hover {
+    background-color: blue;
+}
+
+.fancy-effects {
+    height: 200px;
+    padding: 20px;
+    background: linear-gradient(yellow, orange, red);
+    box-shadow: 10px 10px 10px gray;
+    font-size: 30px;
+    text-shadow: 2px 2px gray;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+.flexboxContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flexboxContainer div {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .flexboxContainer div {
+        background-color: yellow;
+    }
+}
+
+.focus:focus {
+    border: 2px solid lightgreen;
+    outline: none;
+}
+
+li:nth-child(2) {
+    color: red;
+}
+
+.disabled:disabled {
+    background: orange;
+}
+
+a[target="_blank"] {
+    color: darkcyan;
+}
+
+.span {
+    width: 100vw;
+}
+
+span {
+    background-color: purple;
+    height: 100px;
+}
